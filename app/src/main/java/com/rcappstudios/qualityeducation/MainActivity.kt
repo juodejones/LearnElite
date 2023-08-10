@@ -92,6 +92,8 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
+
+
     private fun getNavController(): NavController {
         return (supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment).navController
     }
