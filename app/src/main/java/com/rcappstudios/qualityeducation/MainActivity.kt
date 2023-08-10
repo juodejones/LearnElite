@@ -54,7 +54,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun checkSharedPrefData(){
         val sharedPref = getSharedPreferences(Constants.SHARED_PREF, MODE_PRIVATE)
-
         isMentor = sharedPref.getBoolean("isMentor", false)
         if(isMentor){
             val mentorName = sharedPref.getString(Constants.NAME, null)
