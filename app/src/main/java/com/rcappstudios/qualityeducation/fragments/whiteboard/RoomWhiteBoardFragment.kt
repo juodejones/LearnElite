@@ -37,9 +37,6 @@ class RoomWhiteBoardFragment : Fragment() {
             binding.paintView.myTurn = true
         }
         binding.paintView.pathUpdateListener()
-        binding.eraserButton.setOnClickListener {
-            binding.paintView.clearCanvas(true)
-        }
     }
 
     private fun getRoomData(){
