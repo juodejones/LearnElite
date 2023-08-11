@@ -30,6 +30,9 @@ class MentorWhiteBoardFragment : Fragment() {
     private fun initWhiteBoard(){
         binding.paintView.initMentor(MentorSupportActivity.subject, MentorSupportActivity.mentorUserId, MentorSupportActivity.studentUserId, requireActivity())
         binding.paintView.pathUpdateListener()
+        binding.eraserButton.setOnClickListener {
+            binding.paintView.clearCanvas(true)
+        }
     }
 
 }
