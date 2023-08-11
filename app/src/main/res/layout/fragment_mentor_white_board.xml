@@ -16,19 +16,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.varunest.sparkbutton.SparkButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/eraserButton"
-        android:layout_width="@dimen/_30sdp"
-        android:layout_height="@dimen/_30sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:sparkbutton_activeImage="@drawable/active_erraser"
-        app:sparkbutton_animationSpeed="1.5"
-        app:sparkbutton_iconSize="30dp"
-        app:sparkbutton_inActiveImage="@drawable/inactive_erraser"
-        app:sparkbutton_primaryColor="@color/purple_500"
+        android:src="@drawable/active_erraser"
         android:layout_marginBottom="@dimen/_10sdp"
         android:layout_marginEnd="@dimen/_10sdp"
+        android:visibility="visible"
         app:sparkbutton_secondaryColor="@color/purple_700" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

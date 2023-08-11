@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph2"
-    app:startDestination="@id/roomChatFragment2">
+    app:startDestination="@id/roomWhiteBoardFragment2">
     <fragment
         android:id="@+id/roomChatFragment2"
         android:name="com.rcappstudios.qualityeducation.fragments.room.RoomChatFragment"
@@ -13,7 +13,17 @@
         android:id="@+id/roomWhiteBoardFragment2"
         android:name="com.rcappstudios.qualityeducation.fragments.whiteboard.RoomWhiteBoardFragment"
         android:label="fragment_room_white_board"
-        tools:layout="@layout/fragment_room_white_board" />
+        tools:layout="@layout/fragment_room_white_board" >
+        <action
+            android:id="@+id/action_roomWhiteBoardFragment2_to_roomChatFragment2"
+            app:destination="@id/roomChatFragment2" />
+        <action
+            android:id="@+id/action_roomWhiteBoardFragment2_to_roomVideoStreamFragment2"
+            app:destination="@id/roomVideoStreamFragment2" />
+        <action
+            android:id="@+id/action_roomWhiteBoardFragment2_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/roomVideoStreamFragment2"
         android:name="com.rcappstudios.qualityeducation.fragments.room.RoomVideoStreamFragment"
