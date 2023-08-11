@@ -45,7 +45,13 @@
                     android:fontFamily="@font/mplus_rounded_1c_semibold"
                     android:textStyle="bold"/>
 
-                            </androidx.appcompat.widget.LinearLayoutCompat>
+                <ImageView
+                    android:id="@+id/translate"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/doubt_img"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
             <TextView
                 android:id="@+id/botText"
