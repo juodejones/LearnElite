@@ -5,8 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.google.firebase.auth.FirebaseAuth
-import com.rcappstudios.qualityeducation.R
+
 import com.rcappstudios.qualityeducation.databinding.FragmentMentorWhiteBoardBinding
 
 class MentorWhiteBoardFragment : Fragment() {
@@ -20,6 +19,7 @@ class MentorWhiteBoardFragment : Fragment() {
         binding = FragmentMentorWhiteBoardBinding.inflate(layoutInflater)
         return binding.root
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
