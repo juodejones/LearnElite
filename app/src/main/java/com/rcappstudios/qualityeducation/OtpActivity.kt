@@ -64,7 +64,7 @@ class OtpActivity : AppCompatActivity() {
 
     private fun clickListeners() {
         binding.btnSendOtp.setOnClickListener {
-            if (!subject.isNullOrEmpty())
+            if (isStudent || !subject.isNullOrEmpty())
                 extractNumber()
             else
                 Snackbar.make(binding.root, "Please select Subject", Snackbar.LENGTH_LONG).show()
@@ -79,6 +79,7 @@ class OtpActivity : AppCompatActivity() {
         }
         binding.stdCard.setOnClickListener {
             isStudent = true
+            binding.subjectSpinner.visibility = View.GONE
             binding.userTypeLayout.visibility = View.GONE
             binding.sendOtpView.visibility = View.VISIBLE
         }
@@ -86,6 +87,7 @@ class OtpActivity : AppCompatActivity() {
             isStudent = false
             binding.userTypeLayout.visibility = View.GONE
             binding.sendOtpView.visibility = View.VISIBLE
+            binding.subjectSpinner.visibility = View.VISIBLE
         }
     }
 

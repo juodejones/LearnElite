@@ -145,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/test" />
+                app:srcCompat="@drawable/test_card" />
 
             <TextView
                 android:layout_width="match_parent"
