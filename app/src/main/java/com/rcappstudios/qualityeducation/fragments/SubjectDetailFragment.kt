@@ -251,6 +251,7 @@ class SubjectDetailFragment : Fragment() {
     }
 
     private fun postToStorage(uri: Uri, pdfName: String){
+        loadingDialog.startLoading()
         FirebaseStorage.getInstance()
             .getReference("Pdf/${Calendar.getInstance().timeInMillis}")
             .putFile(uri)
@@ -259,7 +260,11 @@ class SubjectDetailFragment : Fragment() {
                         storeToDatabase(url.toString(), pdfName)
                     }
                 }
+            .addOnFailureListener{
+                Log.d("TAGDataUrl", "storeToDatabase: $it")
+
             }
+    }
     private fun storeToDatabase(url: String, pdfName: String) {
         FirebaseDatabase.getInstance()
             .getReference("Groups/${navArgs.subjectName}/materials")
@@ -268,7 +273,11 @@ class SubjectDetailFragment : Fragment() {
                 PdfModel(
                 pdfName,
                 url
-            ))
+            )).addOnSuccessListener {
+                loadingDialog.dismiss()
+            }.addOnFailureListener{
+                Log.d("TAGDataUrl", "storeToDatabase: $it")
+            }
         Log.d("TAGDataUrl", "storeToDatabase: $url")
     }
 
