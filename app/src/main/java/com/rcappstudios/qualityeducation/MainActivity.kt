@@ -44,9 +44,9 @@ class MainActivity : AppCompatActivity() {
 //        prepareTranslator()
         setUpNavigationComponent()
         checkSharedPrefData()
-//        FirebaseDatabase.getInstance()
-//            .getReference("Room/-NQtlKL0du600SeiAvE9/whiteBoard")
-//            .removeValue()
+       /* FirebaseDatabase.getInstance()
+            .getReference("Room/Chemistry")
+            .removeValue()*/
         actionBar?.setTitle(Html.fromHtml("<font color=\"black\">" + getString(R.string.app_name) + "</font>"))
 
 //        openPdf()

@@ -75,7 +75,7 @@ class SubjectDetailFragment : Fragment() {
         fetchRoomsList()
         getMockTestList()
         fetchPdfDetails()
-        prepareTranslator()
+//        prepareTranslator()
         isMentor = requireActivity().getSharedPreferences(Constants.SHARED_PREF, MODE_PRIVATE)
             .getBoolean("isMentor", false)
 
@@ -117,7 +117,7 @@ class SubjectDetailFragment : Fragment() {
                     for (c in it.children){
                         questionsList.add(c.getValue(QuestionModel::class.java)!!)
                     }
-                    initDoubtsRvAdapter(questionsList)
+//                    initDoubtsRvAdapter(questionsList)
                 }
                 loadingDialog.dismiss()
             }
@@ -131,7 +131,7 @@ class SubjectDetailFragment : Fragment() {
                     for(c in it.children){
                         roomList.add(c.getValue(RoomModel::class.java)!!)
                     }
-                    initRv(roomList)
+//                    initRv(roomList)
                 }
                 loadingDialog.dismiss()
             }
@@ -173,7 +173,7 @@ class SubjectDetailFragment : Fragment() {
         }
     }
 
-    private fun initDoubtsRvAdapter(questionsList: ArrayList<QuestionModel>){
+/*    private fun initDoubtsRvAdapter(questionsList: ArrayList<QuestionModel>){
         binding.rvDoubts.setHasFixedSize(true)
         binding.rvDoubts.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         binding.rvDoubts.adapter = AskQuestionsAdapter(requireContext(), questionsList, true){ flag, value->
@@ -199,7 +199,7 @@ class SubjectDetailFragment : Fragment() {
                 intent.putExtra("RoomId", room.roomID)
                 startActivity(intent)
             }
-    }
+    }*/
 
 
 
@@ -234,7 +234,7 @@ class SubjectDetailFragment : Fragment() {
            translator = Translation.getClient(options)
 
             translator.downloadModelIfNeeded().addOnSuccessListener {
-                translate()
+//                translate()
             }.addOnFailureListener {
 
             }
@@ -286,26 +286,26 @@ class SubjectDetailFragment : Fragment() {
     }
 
 
-    private fun translate(){
-        translator.translate(binding.tvRecentDoubt.text.toString()).addOnSuccessListener {
-            binding.tvRecentDoubt.text = it
-        }
-        translator.translate(binding.tvPeerDiscussion.text.toString()).addOnSuccessListener {
-            binding.tvPeerDiscussion.text = it
-        }
-        translator.translate(binding.tvRecentDoubt.text.toString()).addOnSuccessListener {
-            binding.tvRecentDoubt.text = it
-        }
-//        translator.translate(binding.tvViewAll1.text.toString()).addOnSuccessListener {
-//            binding.tvViewAll1.text = it
+//    private fun translate(){
+//        translator.translate(binding.tvRecentDoubt.text.toString()).addOnSuccessListener {
+//            binding.tvRecentDoubt.text = it
 //        }
-//        translator.translate(binding.tvViewAll2.text.toString()).addOnSuccessListener {
-//            binding.tvViewAll2.text = it
+//        translator.translate(binding.tvPeerDiscussion.text.toString()).addOnSuccessListener {
+//            binding.tvPeerDiscussion.text = it
 //        }
-//        translator.translate(binding.tvViewAll3.text.toString()).addOnSuccessListener {
-//            binding.tvViewAll3.text = it
+//        translator.translate(binding.tvRecentDoubt.text.toString()).addOnSuccessListener {
+//            binding.tvRecentDoubt.text = it
 //        }
-    }
+////        translator.translate(binding.tvViewAll1.text.toString()).addOnSuccessListener {
+////            binding.tvViewAll1.text = it
+////        }
+////        translator.translate(binding.tvViewAll2.text.toString()).addOnSuccessListener {
+////            binding.tvViewAll2.text = it
+////        }
+////        translator.translate(binding.tvViewAll3.text.toString()).addOnSuccessListener {
+////            binding.tvViewAll3.text = it
+////        }
+//    }
 
     private fun initPdfRv(pdfList: MutableList<PdfModel>){
 //        binding.documentsRecyclerView.setHasFixedSize(true)

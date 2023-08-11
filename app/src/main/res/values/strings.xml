@@ -20,6 +20,10 @@
     <string name="radioBt_hint">Enter choices separated by comma \',\'</string>
     <string name="submit">Submit</string>
     <string name="profile_settings"><![CDATA[Profile & Settings]]></string>
+    <string name="doubt_quote">Doubt is the origin of wisdom</string>
+    <string name="groupLearning_quote">Alone we are smart.\nTogether we are Brilliant</string>
+    <string name="test_quote">The only way to pass the test is to take the test</string>
+
 
     <string-array name="array_language">
         <item>Select your language</item>

@@ -6,176 +6,408 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.SubjectDetailFragment">
 
+<!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvRecentDoubt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:layout_marginEnd="@dimen/_5sdp"-->
+<!--                android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                android:fontFamily="@font/mplus_rounded_1c_extra_bold"-->
+<!--                android:text="Recent Doubts"-->
+<!--                android:paddingTop="@dimen/_3sdp"-->
+<!--                android:paddingBottom="@dimen/_3sdp"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/_12sdp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/doubts_expand"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginStart="@dimen/_5sdp"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:layout_marginEnd="@dimen/_5sdp"-->
+<!--                android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                android:fontFamily="@font/mplus_rounded_1c_extra_bold"-->
+<!--                android:paddingStart="@dimen/_5sdp"-->
+<!--                android:paddingTop="@dimen/_3sdp"-->
+<!--                android:paddingEnd="@dimen/_5sdp"-->
+<!--                android:paddingBottom="@dimen/_3sdp"-->
+<!--                android:text="View all"-->
+<!--                android:textColor="@color/purple_200" />-->
+<!--        </RelativeLayout>-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/rvDoubts"-->
+<!--            />-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvPeerDiscussion"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:layout_marginEnd="@dimen/_5sdp"-->
+<!--                android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                android:fontFamily="@font/mplus_rounded_1c_extra_bold"-->
+<!--                android:text="Peers Discussions"-->
+<!--                android:paddingTop="@dimen/_3sdp"-->
+<!--                android:paddingBottom="@dimen/_3sdp"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/_12sdp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/peers_expand"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginStart="@dimen/_5sdp"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:layout_marginEnd="@dimen/_5sdp"-->
+<!--                android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                android:fontFamily="@font/mplus_rounded_1c_extra_bold"-->
+<!--                android:paddingStart="@dimen/_5sdp"-->
+<!--                android:paddingTop="@dimen/_3sdp"-->
+<!--                android:paddingEnd="@dimen/_5sdp"-->
+<!--                android:paddingBottom="@dimen/_3sdp"-->
+<!--                android:text="View all"-->
+<!--                android:textColor="@color/purple_200" />-->
+<!--        </RelativeLayout>-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/rvPeers"/>-->
+
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvTestChallenges"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Test challenges"-->
+<!--                android:textSize="@dimen/_12sdp"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:fontFamily="@font/mplus_rounded_1c_extra_bold"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/create_test"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginStart="@dimen/_5sdp"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:layout_marginEnd="@dimen/_5sdp"-->
+<!--                android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                android:fontFamily="@font/mplus_rounded_1c_extra_bold"-->
+<!--                android:paddingStart="@dimen/_5sdp"-->
+<!--                android:paddingTop="@dimen/_3sdp"-->
+<!--                android:paddingEnd="@dimen/_5sdp"-->
+<!--                android:paddingBottom="@dimen/_3sdp"-->
+<!--                android:text="Create"-->
+<!--                android:textColor="@color/purple_200" />-->
+<!--        </RelativeLayout>-->
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/mockTestRecyclerView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            />-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvDocuments"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Documents"-->
+<!--                android:textSize="@dimen/_12sdp"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:fontFamily="@font/mplus_rounded_1c_extra_bold"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/uploadDocuments"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginStart="@dimen/_5sdp"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:layout_marginEnd="@dimen/_5sdp"-->
+<!--                android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                android:fontFamily="@font/mplus_rounded_1c_extra_bold"-->
+<!--                android:paddingStart="@dimen/_5sdp"-->
+<!--                android:paddingTop="@dimen/_3sdp"-->
+<!--                android:paddingEnd="@dimen/_5sdp"-->
+<!--                android:paddingBottom="@dimen/_3sdp"-->
+<!--                android:text="Upload"-->
+<!--                android:textColor="@color/purple_200" />-->
+<!--        </RelativeLayout>-->
+<!--      -->
+
+
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <RelativeLayout
-            android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            app:cardElevation="@dimen/_20sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
             android:layout_height="wrap_content">
-
             <TextView
-                android:id="@+id/tvRecentDoubt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_5sdp"
-                android:fontFamily="@font/mplus_rounded_1c_extra_bold"
-                android:text="Recent Doubts"
-                android:paddingTop="@dimen/_3sdp"
-                android:paddingBottom="@dimen/_3sdp"
-                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:padding="@dimen/_10sdp"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/groupLearning_quote"/>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Physcis"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mplus_rounded_1c_medium"
+            android:padding="@dimen/_10sdp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <TextView
+            <LinearLayout
                 android:id="@+id/doubts_expand"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_5sdp"
-                android:fontFamily="@font/mplus_rounded_1c_extra_bold"
-                android:paddingStart="@dimen/_5sdp"
-                android:paddingTop="@dimen/_3sdp"
-                android:paddingEnd="@dimen/_5sdp"
-                android:paddingBottom="@dimen/_3sdp"
-                android:text="View all"
-                android:textColor="@color/purple_200" />
-        </RelativeLayout>
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:layout_weight=".2"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/subject_background"
+                android:orientation="vertical">
 
-        <androidx.recyclerview.widget.RecyclerView
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/doubt_img" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Doubts"
+                    android:textColor="@color/black"
+                    android:textAlignment="center" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btnDocument"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:layout_weight=".2"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/subject_background"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/document" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="View files"
+                    android:textColor="@color/black"
+                    android:textAlignment="center" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rvDoubts"
-            />
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/tvPeerDiscussion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_5sdp"
-                android:fontFamily="@font/mplus_rounded_1c_extra_bold"
-                android:text="Peers Discussions"
-                android:paddingTop="@dimen/_3sdp"
-                android:paddingBottom="@dimen/_3sdp"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_12sdp" />
-
-            <TextView
+            <LinearLayout
                 android:id="@+id/peers_expand"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_5sdp"
-                android:fontFamily="@font/mplus_rounded_1c_extra_bold"
-                android:paddingStart="@dimen/_5sdp"
-                android:paddingTop="@dimen/_3sdp"
-                android:paddingEnd="@dimen/_5sdp"
-                android:paddingBottom="@dimen/_3sdp"
-                android:text="View all"
-                android:textColor="@color/purple_200" />
-        </RelativeLayout>
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:layout_weight=".2"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/subject_background"
+                android:orientation="vertical">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rvPeers"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/workshop" />
 
+                <TextView
 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Group learning"
+                    android:textColor="@color/black"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btnPeerLearning"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:layout_weight=".2"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/subject_background"
+                android:orientation="vertical">
 
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/test" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Take Test"
+                    android:textColor="@color/black"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+        </LinearLayout>
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/tvTestChallenges"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Test challenges"
-                android:textSize="@dimen/_12sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/mplus_rounded_1c_extra_bold"
-                />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvDocuments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Documents"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/mplus_rounded_1c_extra_bold"
+                        />
 
-            <TextView
-                android:id="@+id/create_test"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_5sdp"
-                android:fontFamily="@font/mplus_rounded_1c_extra_bold"
-                android:paddingStart="@dimen/_5sdp"
-                android:paddingTop="@dimen/_3sdp"
-                android:paddingEnd="@dimen/_5sdp"
-                android:paddingBottom="@dimen/_3sdp"
-                android:text="Create"
-                android:textColor="@color/purple_200" />
-        </RelativeLayout>
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/mockTestRecyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+                    <TextView
+                        android:id="@+id/uploadDocuments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:fontFamily="@font/mplus_rounded_1c_extra_bold"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:text="Upload"
+                        android:textColor="@color/purple_200" />
+                </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/tvDocuments"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Documents"
-                android:textSize="@dimen/_12sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/mplus_rounded_1c_extra_bold"
-                />
-
-            <TextView
-                android:id="@+id/uploadDocuments"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_5sdp"
-                android:fontFamily="@font/mplus_rounded_1c_extra_bold"
-                android:paddingStart="@dimen/_5sdp"
-                android:paddingTop="@dimen/_3sdp"
-                android:paddingEnd="@dimen/_5sdp"
-                android:paddingBottom="@dimen/_3sdp"
-                android:text="Upload"
-                android:textColor="@color/purple_200" />
-        </RelativeLayout>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/documentsRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_200sdp"
+            android:layout_height="wrap_content"
             />
 
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvTestChallenges"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Test challenges"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/mplus_rounded_1c_extra_bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/create_test"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:fontFamily="@font/mplus_rounded_1c_extra_bold"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:text="Create"
+                        android:textColor="@color/purple_200" />
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mockTestRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:isScrollContainer="false"
+                    />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
