@@ -1,5 +1,7 @@
 package com.rcappstudios.qualityeducation.fragments.mocktest
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -33,6 +35,14 @@ class MockTestCreateFragment : Fragment() {
 
     val navArgs: SubjectDetailFragmentArgs by navArgs()
     private lateinit var subject: String
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if(resultCode == Activity.RESULT_OK){
+
+
+        }
+    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -55,6 +65,10 @@ class MockTestCreateFragment : Fragment() {
 
         binding.buttonCreate.setOnClickListener {
             createButtonClickListener()
+        }
+
+        binding.uploadExcelFile.setOnClickListener {
+            openFileSelection()
         }
     }
 
@@ -207,6 +221,13 @@ class MockTestCreateFragment : Fragment() {
                 Toast.makeText(requireContext(), "Unable to create test", Toast.LENGTH_SHORT).show()
             }
         Log.d("MockTestCreateTag", "createTest: ${newTest.name}")
+    }
+
+    private fun openFileSelection() {
+        val galleryIntent = Intent()
+        galleryIntent.action = Intent.ACTION_GET_CONTENT
+        galleryIntent.type = "application/xlsx"
+        startActivityForResult(galleryIntent, 1)
     }
 
 }

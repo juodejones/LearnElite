@@ -32,7 +32,7 @@ class RoomVideoStreamFragment : Fragment() {
 
     // Fill the App ID of your project generated on Agora Console.
     private val appId = "a9c7eed08a8a4e4bba648e6e6e879163"
-
+    //2596f1fd10304710b9c20fa7619ab76d
     // Fill the channel name.
     private val channelName = "1"
 

@@ -7,6 +7,8 @@
     android:orientation="vertical"
     tools:context=".fragments.mocktest.MockTestCreateFragment">
 
+
+
     <TextView
         android:id="@+id/create_test"
         android:layout_width="wrap_content"
@@ -14,8 +16,19 @@
         android:layout_margin="@dimen/_13sdp"
         android:text="@string/creating_a_test"
         android:textSize="@dimen/_13ssp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/uploadExcelFile"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/importexcel"
+        app:layout_constraintBottom_toBottomOf="@+id/create_test"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="@dimen/_20sdp"
+        app:layout_constraintTop_toTopOf="@+id/create_test" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/test_name_textLayoutBox"
