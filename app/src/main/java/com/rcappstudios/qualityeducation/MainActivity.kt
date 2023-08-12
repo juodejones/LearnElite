@@ -92,7 +92,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
     private fun getNavController(): NavController {
         return (supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment).navController
     }
@@ -125,6 +124,10 @@ class MainActivity : AppCompatActivity() {
             enableDownload = false                    // This param is true by defualt.
         )
         )
+    }
+
+    private fun getExcelData() {
+
     }
 
 }
